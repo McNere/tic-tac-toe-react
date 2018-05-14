@@ -45,7 +45,6 @@ class App extends Component {
 
   checkWin = (board, player) => {
     //check board pattern for a winner
-    console.log("checkwin", board);
     if ((board[0].played === player&&board[1].played === player&&board[2].played === player) ||
         (board[3].played === player&&board[4].played === player&&board[5].played === player) ||
         (board[6].played === player&&board[7].played === player&&board[8].played === player) ||
@@ -80,7 +79,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.board);
     const { round, displayText, turn } = this.state;
     //render board content
     return (
