@@ -1,0 +1,92 @@
+h1 {
+	text-align: center;
+	width: 100%;
+	color: white;
+	background-color: steelblue;
+	margin: 0;
+	font-size: 5em;
+	padding: 20px 0;
+}
+
+h2 {
+	display: inline-block;
+	color: white;
+	margin: 0 auto;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+}
+
+#reset {
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	outline: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	color: white;
+	font-size: inherit;
+	margin: 0 auto;
+	transition: all .3s;
+}
+
+#reset:hover {
+	background-color: white;
+	color: black;
+}
+
+.X {
+	color: red;
+}
+
+.O {
+	color: blue;
+}
+
+.bottombar {
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	background-color: #232323;
+	padding: 0;
+	text-align: center;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: 800px;
+	height: 800px;
+	margin: 40px auto 0 auto;
+}
+
+.item {
+	font-size: 14em;
+	text-align: center;
+}
+
+.item:nth-child(2) {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.item:nth-child(4) {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.item:nth-child(5) {
+	border: 2px solid black;
+}
+
+.item:nth-child(6) {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.item:nth-child(8) {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
